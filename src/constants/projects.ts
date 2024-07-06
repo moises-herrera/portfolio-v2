@@ -7,7 +7,7 @@ export const PROJECTS: Project[] = [
     description:
       'Aplicación móvil para comprar y vender acciones. Puedes ver el precio de las acciones, comprar y vender acciones, y ver tu historial de transacciones.',
     github: 'https://github.com/moises-herrera/smart-finance-mobile',
-    image: '/smart-finance.webp',
+    image: '/projects/smart-finance.webp',
     tags: [
       TAGS.REACT_NATIVE,
       TAGS.EXPO,
@@ -24,7 +24,7 @@ export const PROJECTS: Project[] = [
     title: 'People - The Social Network',
     description: `People es una red social donde puedes compartir tus pensamientos, fotos y videos con tus amigos y familiares. Cuenta con un sistema de autenticación y autorización, y un feed de noticias donde puedes ver las publicaciones de tus amigos. También puedes seguir a otros usuarios y chatear con tus amigos en tiempo real.`,
     github: 'https://github.com/moises-herrera/social-network-frontend',
-    image: '/people.webp',
+    image: '/projects/people.webp',
     tags: [
       TAGS.REACT,
       TAGS.TYPESCRIPT,
@@ -43,7 +43,7 @@ export const PROJECTS: Project[] = [
     title: 'Fast Food Delivery',
     description:
       'Aplicación web para gestionar pedidos de comida utilizando microservicios y RabbitMQ. Puedes ver el menú, realizar un pedido, y en el panel de administración se puede ver el estado de los pedidos en tiempo real.',
-    image: '/food-delivery.webp',
+    image: '/projects/food-delivery.webp',
     tags: [
       TAGS.REACT,
       TAGS.TYPESCRIPT,
@@ -62,7 +62,7 @@ export const PROJECTS: Project[] = [
     description:
       'Aplicación web para gestionar tus facturas y gastos. Puedes crear facturas, gastos y categorías, y ver un resumen de tus finanzas. También puedes exportar tus facturas y gastos a un archivo PDF.',
     github: 'https://github.com/moises-herrera/easy-bills-frontend',
-    image: '/easy-bills.webp',
+    image: '/projects/easy-bills.webp',
     tags: [
       TAGS.ANGULAR,
       TAGS.RX_JS,
