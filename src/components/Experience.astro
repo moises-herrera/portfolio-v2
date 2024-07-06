@@ -1,0 +1,18 @@
+---
+import Container from './Container.astro';
+import Briefcase from '../icons/Briefcase.astro';
+import Timeline from './timeline/Timeline.astro';
+import { EXPERIENCE } from '../constants/experience';
+---
+
+<Container
+  id="experience"
+  class="scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl"
+>
+  <h2 class="section-title">
+    <Briefcase class="size-8" />
+    Experiencia laboral
+  </h2>
+
+  <Timeline items={EXPERIENCE} />
+</Container>

@@ -1,0 +1,64 @@
+---
+const links = [
+  {
+    title: 'Sobre mí',
+    label: 'sobre-mi',
+    href: '/#about',
+  },
+  {
+    title: 'Experiencia',
+    label: 'experiencia',
+    href: '/#experience',
+  },
+  {
+    title: 'Proyectos',
+    label: 'proyectos',
+    href: '/#projects',
+  },
+  {
+    title: 'Educación',
+    label: 'educacion',
+    href: '/#education',
+  },
+];
+---
+
+<header
+  class="fixed top-0 z-10 w-full h-[69px] flex items-center justify-center text-secondary"
+>
+  <nav class="top-nav">
+    <ul class="max-w-[380px] flex flex-row gap-x-4">
+      {
+        links.map(({ title, href, label }) => (
+          <a href={href} class="nav-link" aria-label={label}>
+            {title}
+          </a>
+        ))
+      }
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .nav-link {
+    @apply text-sm sm:text-base transition;
+  }
+
+  .nav-link:hover {
+    @apply text-accent;
+  }
+  
+  .top-nav {
+    @apply px-5 py-2 rounded-full;
+
+    animation: nav-shadown 1s linear both;
+    animation-timeline: scroll();
+    animation-range: 0 100px;
+  }
+
+  @keyframes nav-shadown {
+    to {
+      @apply shadow-lg ring-1 backdrop-blur bg-gray-800/90 ring-white/10;
+    }
+  }
+</style>

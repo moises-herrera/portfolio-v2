@@ -1,0 +1,14 @@
+---
+import TimelineItem from './TimelineItem.astro';
+import { type TimelineItemData } from '../../types/timeline-item-data'
+
+interface Props {
+  items: TimelineItemData[];
+}
+
+const { items } = Astro.props;
+---
+
+<ol class="relative ml-5 mt-16 border-s border-gray-200">
+  {items.map((experience) => <TimelineItem {...experience} />)}
+</ol>

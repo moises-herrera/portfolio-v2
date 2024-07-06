@@ -1,0 +1,35 @@
+---
+import SocialLink from './SocialLink.astro';
+import Github from '../../icons/Github.astro';
+import LinkedIn from '../../icons/LinkedIn.astro';
+import Mail from '../../icons/Mail.astro';
+---
+
+<nav>
+  <ul class="flex flex-row flex-wrap gap-4 lg:gap-6 text-secondary-gray">
+    <li>
+      <SocialLink href="https://github.com/moises-herrera">
+        <Github class="size-4 md:size-6" />
+        GitHub
+      </SocialLink>
+    </li>
+    <li>
+      <SocialLink href="https://www.linkedin.com/in/moises-herrerag/">
+        <LinkedIn class="size-4 md:size-6" />
+        LinkedIn
+      </SocialLink>
+    </li>
+    <li>
+      <SocialLink href="mailto:moisesherrera1603@gmail.com">
+        <Mail class="size-4 md:size-6" />
+        Contáctame
+      </SocialLink>
+    </li>
+  </ul>
+</nav>
+
+<style>
+  .social-link:hover {
+    @apply text-accent;
+  }
+</style>

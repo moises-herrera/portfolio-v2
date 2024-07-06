@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Experience from '../components/Experience.astro';
+import Projects from '../components/Projects.astro';
+import Education from '../components/Education.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout
+  title="Moisés Herrera - Desarrollador Web"
+  description="Conoce más sobre Moisés Herrera, un desarrollador web apasionado por la tecnología."
+>
+  <main class="px-4">
+    <Hero />
+    <div class="space-y-24">
+      <About />
+      <Experience />
+      <Projects />
+      <Education />
+    </div>
+  </main>
+  <Footer />
+</Layout>

@@ -1,0 +1,15 @@
+---
+import Container from './Container.astro';
+import Bookmark from '../icons/Bookmark.astro';
+import Timeline from './timeline/Timeline.astro';
+import { EDUCATION } from '../constants/education';
+---
+
+<Container id="education">
+  <h2 class="section-title">
+    <Bookmark class="size-8" />
+    Educación
+  </h2>
+
+  <Timeline items={EDUCATION} />
+</Container>

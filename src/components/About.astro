@@ -1,0 +1,43 @@
+---
+import Container from './Container.astro';
+import User from '../icons/User.astro';
+---
+
+<Container
+  id="about"
+  class="scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl"
+>
+  <h2 class="section-title mb-6">
+    <User class="size-8" />
+    Sobre mí
+  </h2>
+
+  <article class="flex flex-col md:flex-row items-center justify-center gap-8">
+    <section class="w-full md:w-3/5 space-y-4 order-2 md:order-1">
+      <p class="text-secondary-gray text-pretty">
+        ¡Hola! Soy Moisés Herrera. Empecé a programar cuando tenía 15 años, los
+        primeros lenguajes que usé fueron C y Java. Posteriormente me enfoqué en
+        el desarrollo de aplicaciones web y actualmente <strong
+          class="text-accent">trabajo como programador en una startup.</strong
+        >
+      </p>
+
+      <p class="text-secondary-gray text-pretty">
+        <strong class="text-accent"
+          >Tengo experiencia tanto en desarrollo front-end como back-end</strong
+        >. Mi objetivo profesional es adquirir nuevos conocimientos y
+        habilidades cada día para poder entregar de forma eficiente productos de
+        la mejor calidad.
+      </p>
+    </section>
+
+    <img
+      width="250"
+      height="250"
+      src="/profile.webp"
+      alt="Moisés Herrera"
+      class="p-1 aspect-square object-cover rounded-full order-1 md:order-2"
+      draggable="false"
+    />
+  </article>
+</Container>

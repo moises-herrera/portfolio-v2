@@ -1,0 +1,59 @@
+---
+import Container from './Container.astro';
+import Code from '../icons/Code.astro';
+import GithubIcon from '../icons/Github.astro';
+import { PROJECTS } from '../constants/projects';
+---
+
+<Container id="projects">
+  <h2 class="section-title mb-6">
+    <Code class="size-8" />
+    Proyectos
+  </h2>
+
+  <section class="flex flex-col gap-y-16">
+    {
+      PROJECTS.map(({ title, description, tags, image, github }) => (
+        <article class="flex flex-col lg:flex-row gap-8">
+          {image ? (
+            <figure class="w-full lg:w-1/2">
+              <img
+                class="oject-cover object-top w-full h-full rounded-xl"
+                src={image}
+                alt={title}
+                draggable="false"
+              />
+            </figure>
+          ) : null}
+          <section class="w-full lg:w-1/2 lg:max-w-lg">
+            <h3 class="text-2xl font-semibold text-accent mb-2">{title}</h3>
+            <p class="text-base mb-4 text-pretty">{description}</p>
+            <ul class="flex flex-row gap-4 flex-wrap">
+              {tags.map((tag) => (
+                <li>
+                  <span
+                    class={`flex gap-x-2 rounded-full text-xs py-1 px-2 border border-secondary`}
+                  >
+                    <tag.icon class="size-4" />
+                    <span>{tag.name}</span>
+                  </span>
+                </li>
+              ))}
+            </ul>
+            {github ? (
+              <a
+                href={github}
+                class="mt-6 rounded-xl py-2 px-4 border border-secondary flex flex-1 w-fit gap-x-3 text-secondary hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <GithubIcon class="size-6" />
+                Ver código fuente
+              </a>
+            ) : null}
+          </section>
+        </article>
+      ))
+    }
+  </section>
+</Container>
