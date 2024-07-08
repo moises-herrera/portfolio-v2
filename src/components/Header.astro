@@ -30,9 +30,11 @@ const links = [
     <ul class="max-w-[380px] flex flex-row gap-x-4">
       {
         links.map(({ title, href, label }) => (
-          <a href={href} class="nav-link" aria-label={label}>
-            {title}
-          </a>
+          <li>
+            <a href={href} class="nav-link" aria-label={label}>
+              {title}
+            </a>
+          </li>
         ))
       }
     </ul>
@@ -47,7 +49,7 @@ const links = [
   .nav-link:hover {
     @apply text-accent;
   }
-  
+
   .top-nav {
     @apply px-5 py-2 rounded-full;
 
