@@ -20,6 +20,13 @@ import RabbitMQIcon from '../icons/RabbitMQ.astro';
 import DigitalOceanIcon from '../icons/DigitalOcean.astro';
 import ZodIcon from '../icons/Zod.astro';
 import SocketIOIcon from '../icons/SocketIO.astro';
+import PostgresIcon from '../icons/Postgres.astro';
+import NestIcon from '../icons/Nest.astro';
+import AWSIcon from '../icons/AWS.astro';
+import TanStackQueryIcon from '../icons/TanStackQuery.astro';
+import VitestIcon from '../icons/Vitest.astro';
+import ClaudeIcon from '../icons/Claude.astro';
+import ShadcnIcon from '../icons/Shadcn.astro';
 
 export const TAGS = {
   REACT: {
@@ -113,5 +120,33 @@ export const TAGS = {
   SOCKET_IO: {
     name: 'Socket.IO',
     icon: SocketIOIcon,
-  }
+  },
+  POSTGRES: {
+    name: 'PostgreSQL',
+    icon: PostgresIcon,
+  },
+  NEST: {
+    name: 'NestJS',
+    icon: NestIcon,
+  },
+  AWS: {
+    name: 'AWS',
+    icon: AWSIcon,
+  },
+  TANSTACK_QUERY: {
+    name: 'TanStack Query',
+    icon: TanStackQueryIcon,
+  },
+  VITEST: {
+    name: 'Vitest',
+    icon: VitestIcon,
+  },
+  CLAUDE: {
+    name: 'Claude',
+    icon: ClaudeIcon,
+  },
+  SHADCN: {
+    name: 'shadcn/ui',
+    icon: ShadcnIcon,
+  },
 };

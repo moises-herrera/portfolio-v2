@@ -3,11 +3,55 @@ import { TAGS } from './tags';
 
 export const PROJECTS: Project[] = [
   {
+    title: 'QuickReviewer',
+    description:
+      'Agente de IA para automatizar revisiones de código en GitHub usando Claude Sonnet. El bot tiene la capacidad de analizar pull requests, proporcionar comentarios constructivos y sugerir mejoras basadas en las mejores prácticas de desarrollo de software. Incluye un dashboard personalizado para visualizar gráficos y métricas de rendimiento, y para configurar el bot.',
+    github: 'https://github.com/moises-herrera/quick-reviewer-backend',
+    image: '/projects/quick-reviewer.webp',
+    year: 2025,
+    tags: [
+      TAGS.REACT,
+      TAGS.TYPESCRIPT,
+      TAGS.TAILWIND,
+      TAGS.SHADCN,
+      TAGS.TANSTACK_QUERY,
+      TAGS.NODE_JS,
+      TAGS.EXPRESS,
+      TAGS.POSTGRES,
+      TAGS.VITEST,
+      TAGS.CLAUDE,
+      TAGS.DIGITAL_OCEAN,
+      TAGS.DOCKER,
+      TAGS.ZOD,
+    ],
+  },
+  {
+    title: 'CloudNest',
+    description:
+      'Aplicación web para gestionar almacenamiento de archivos en la nube. Permite a los usuarios subir, descargar y compartir archivos de forma segura.',
+    github: 'https://github.com/moises-herrera/files-storage-backend',
+    image: '/projects/cloud-nest.webp',
+    year: 2025,
+    tags: [
+      TAGS.ANGULAR,
+      TAGS.RX_JS,
+      TAGS.TYPESCRIPT,
+      TAGS.TAILWIND,
+      TAGS.JWT,
+      TAGS.NODE_JS,
+      TAGS.NEST,
+      TAGS.POSTGRES,
+      TAGS.AWS,
+      TAGS.DOCKER,
+    ],
+  },
+  {
     title: 'SmartFinance',
     description:
       'Aplicación móvil para comprar y vender acciones. Puedes ver el precio de las acciones, comprar y vender acciones, y ver tu historial de transacciones.',
     github: 'https://github.com/moises-herrera/smart-finance-mobile',
     image: '/projects/smart-finance.webp',
+    year: 2024,
     tags: [
       TAGS.REACT_NATIVE,
       TAGS.EXPO,
@@ -17,6 +61,7 @@ export const PROJECTS: Project[] = [
       TAGS.EXPRESS,
       TAGS.MONGO_DB,
       TAGS.JWT,
+      TAGS.DOCKER,
       TAGS.ZOD,
     ],
   },
@@ -25,6 +70,7 @@ export const PROJECTS: Project[] = [
     description: `People es una red social donde puedes compartir tus pensamientos, fotos y videos con tus amigos y familiares. Cuenta con un sistema de autenticación y autorización, y un feed de noticias donde puedes ver las publicaciones de tus amigos. También puedes seguir a otros usuarios y chatear con tus amigos en tiempo real.`,
     github: 'https://github.com/moises-herrera/social-network-frontend',
     image: '/projects/people.webp',
+    year: 2023,
     tags: [
       TAGS.REACT,
       TAGS.TYPESCRIPT,
@@ -44,6 +90,7 @@ export const PROJECTS: Project[] = [
     description:
       'Aplicación web para gestionar pedidos de comida utilizando microservicios y RabbitMQ. Puedes ver el menú, realizar un pedido, y en el panel de administración se puede ver el estado de los pedidos en tiempo real.',
     image: '/projects/food-delivery.webp',
+    year: 2023,
     tags: [
       TAGS.REACT,
       TAGS.TYPESCRIPT,
@@ -63,6 +110,7 @@ export const PROJECTS: Project[] = [
       'Aplicación web para gestionar tus facturas y gastos. Puedes crear facturas, gastos y categorías, y ver un resumen de tus finanzas. También puedes exportar tus facturas y gastos a un archivo PDF.',
     github: 'https://github.com/moises-herrera/easy-bills-frontend',
     image: '/projects/easy-bills.webp',
+    year: 2023,
     tags: [
       TAGS.ANGULAR,
       TAGS.RX_JS,

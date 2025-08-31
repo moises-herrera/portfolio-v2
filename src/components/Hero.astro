@@ -4,7 +4,9 @@ import SocialLinks from './social/SocialLinks.astro';
 
 <section class="max-w-2xl h-screen mx-auto flex flex-col justify-center">
   <div class="mb-10">
-    <h1 class="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-[80px] text-secondary mb-2 sm:mb-4">
+    <h1
+      class="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-[80px] text-secondary mb-2 sm:mb-4"
+    >
       Moisés Herrera
     </h1>
     <h2
@@ -13,9 +15,10 @@ import SocialLinks from './social/SocialLinks.astro';
       Software Developer
     </h2>
     <p class="text-lg sm:text-xl text-secondary-gray text-wrap">
-      +2 años de experiencia como <strong class="text-accent"
-        >Desarrollador Web</strong
-      .> <span class="opacity-75">
+      +{new Date().getFullYear() - 2022} años de experiencia como <strong
+        class="text-accent">Desarrollador Web.</strong
+      >
+      <span class="opacity-75">
         Estudiante de Ingeniería Informática apasionado por el desarrollo de
         software.
       </span>
