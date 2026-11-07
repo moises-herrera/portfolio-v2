@@ -7,5 +7,6 @@ export const EDUCATION: TimelineItemData[] = [
     description: 'Enfásis: Inteligencia Artificial y Cloud Computing',
     location: 'Colombia',
     startDate: '2021',
+    endDate: '2025',
   },
 ];
